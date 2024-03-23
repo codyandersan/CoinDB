@@ -1,11 +1,11 @@
 import json
 import requests
-
-url = "https://coindb-30ac.restdb.io/rest/coins"
+from env import *
+url = API_URL
 
 headers = {
     'content-type': "application/json",
-    'x-apikey': "0185c745f02eea6f0d0aee3126e3d6085911d",
+    'x-apikey': API_KEY,
     'cache-control': "no-cache"
     }
 
